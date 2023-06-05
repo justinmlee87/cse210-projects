@@ -39,7 +39,7 @@ class Program
         scriptures.Add(new Scripture("Jacob 2:18-19", "But before ye seek for riches, seek ye for the kingdom of God. And after ye have obtained a hope in Christ ye shall obtain riches, if ye seek them; and if ye seek them for the intent to do good to clothe the naked, and to feed the hungry, and to liberate the captive, and administer relief to the sick and the afflicted."));
         scriptures.Add(new Scripture("James 1:5-6", "If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him. But let him ask in faith, nothing wavering. Forhe that wavereth is like a wave of the sea driven with the wind and tossed."));
         scriptures.Add(new Scripture("John 3:16", "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life."));
-        scriptures.Add(new Scripture("2 Nephi 31:20", "Wherefore, ye must press forward with a steadfastness in Christ, having a perfect brightness of hope, and a love of God and of all men. Wherefore, if ye shall press forward, feasting upon the word of Christ, and endure to the end, behold, thus saith the Father: Ye shall have eternal life."));
+        
 
         return scriptures;
     }
