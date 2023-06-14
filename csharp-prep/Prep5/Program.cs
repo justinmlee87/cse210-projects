@@ -4,49 +4,27 @@ class Program
 {
     static void Main(string[] args)
     {
-        DisplayWelcomeMessage();
 
-        string userName = PromptUserName();
-        int userNumber = PromptUserNumber();
+        List<Shape> shapes = new List<Shape>();
 
-        int squaredNumber = SquareNumber(userNumber);
+        Square s1 = new Square("Red", 3);
+        shapes.Add(s1);
 
-        DisplayResult(userName, squaredNumber);
+        Rectangle s2 = new Rectangle("Blue", 4, 5);
+        shapes.Add(s2);
 
+        Circle s3 = new Circle("Green", 6);
+        shapes.Add(s3);
+
+        foreach (Shape s in shapes)
+        {
+
+            string color = s.GetColor();
+
+
+            double area = s.GetArea();
+
+            Console.WriteLine($"The {color} shape has an area of {area}.");
+        }
     }
-
-    static void DisplayWelcomeMessage()
-    {
-        Console.WriteLine("Welcome to the program!");
-    }
-
-    static string PromptUserName()
-    {
-        Console.WriteLine("Please enter your name: ");
-        string name = Console.ReadLine();
-
-        return name;
-    }
-
-    static int PromptUserNumber()
-    {
-        Console.WriteLine("Please enter a number: ");
-        int number = int.Parse(Console.ReadLine());
-
-        return number;
-    }
-    static int SquareNumber(int number)
-    {
-        int square = number * number;
-        
-        return square;
-    }
-
-    static void DisplayResult(string name, int square)
-    {
-        Console.WriteLine($"{name}, The square of your number is {square}");
-    }
-
-
-
 }
